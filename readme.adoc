@@ -1,12 +1,13 @@
-= Kubernetes for Java Developers
+= Kubernetes - Java Project
 
-== Create Kubernetes Cluster
-
-https://github.com/arun-gupta/kubernetes-java-sample/blob/master/workshop.adoc#create-kubernetes-cluster
+== Developed By:
+. Akash Ramjyothi
+. E-Mail ID: akash.ramjyothi@gmail.com
+. PH: +91 8939928002
 
 == Create Resources
 
-=== Pod
+== Pod:
 
 ==== Using CLI
 
@@ -202,12 +203,6 @@ All the code is in `maven` directory:
 . Check logs: `kubectl logs -f <pod-name>` to show the output `Book{isbn=978-1-4919-1889-0, name=Minecraft Modding with Forge, cost=29.99}`
 . Delete all resources: `kubectl delete -f couchbase-service.yml -f bootiful-couchbase.yml`
 
-== Rolling Updates
-
-All code in `rolling-update` directory:
-
-https://github.com/arun-gupta/kubernetes-java-sample/tree/master/rolling-update
-
 == Namespaces
 
 . Create a new namespace: `kubectl create -f dev-namespace.yaml`
@@ -219,12 +214,6 @@ https://github.com/arun-gupta/kubernetes-java-sample/tree/master/rolling-update
 . List all resources in all namespaces: `kubectl get deployments --all-namespaces`
 . Show pods in the namespaces: `kubectl get pods --all-namespaces`
 
-== Quota (broken)
-
-. Create a constrained resource: `kubectl create -f quota-wildfly.yaml`
-. Check for pods: `kubectl get -w pods`
-. Broken: https://github.com/kubernetes/kubernetes/issues/33621
-
 == Run-once/Batch Jobs
 
 . Create a job: `kubectl create -f runonce-job.yaml`
@@ -232,17 +221,4 @@ https://github.com/arun-gupta/kubernetes-java-sample/tree/master/rolling-update
 . More details about job: `kubectl describe jobs wait`
 . Check pods: `kubectl get pods`
 . Show all completed pods: `kubectl get pods --show-all`
-
-== Couchbase Cluster
-
-https://github.com/arun-gupta/couchbase-kubernetes/tree/master/cluster
-
-== Daemon Set (work in progress)
-
-. Create a daemon set: `kubectl create -f prometheus-dameonset.yml`
-. 
-
-=== Tips
-
-. Create resources in all `.json`, `.yaml` and `.yml` files in dir: `kubectl create -f ./dir`
 
