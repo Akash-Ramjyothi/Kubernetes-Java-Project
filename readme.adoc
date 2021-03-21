@@ -5,6 +5,12 @@
 . E-Mail ID: akash.ramjyothi@gmail.com
 . PH: +91 8939928002
 
+== Architecture Followed:
+(https://user-images.githubusercontent.com/54114888/111888851-51199500-8a06-11eb-822b-28c7bb74ce5f.png)
+
+== Description:
+This repository is a basic illustration of a Java Project with Kubernetes. The steps I followed in the project are as follows:
+
 == Create Resources
 
 == Pod:
